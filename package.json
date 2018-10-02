@@ -1,0 +1,22 @@
+{
+  "name": "alloy-mesh-vis",
+  "main": "./lib/index",
+  "version": "0.0.1",
+  "description": "A short description of your package",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "alloy-mesh-vis:toggle"
+  },
+  "activationHooks": [
+    "alloy-mesh-vis:grammar-used"
+  ],
+  "repository": "https://github.com/atdyer/alloy-mesh-vis.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "java": "0.10.0",
+    "temp": "0.8.3"
+  }
+}

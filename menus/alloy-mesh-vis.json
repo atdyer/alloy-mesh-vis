@@ -1,0 +1,31 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Alloy",
+        "submenu": [
+          {
+            "label": "Show Mesh Visualizer",
+            "command": "alloy-mesh-vis:toggle"
+          }
+        ]
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Alloy",
+          "submenu": [
+            {
+              "label": "Show Mesh Visualizer",
+              "command": "alloy-mesh-vis:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
