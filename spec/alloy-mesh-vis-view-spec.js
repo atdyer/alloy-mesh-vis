@@ -1,6 +1,6 @@
 'use babel';
 
-import AlloyMeshVisView from '../lib/alloy-mesh-vis-view';
+import AlloyMeshVisView from '../lib/old/alloy-mesh-vis-view';
 
 describe('AlloyMeshVisView', () => {
   it('has one valid test', () => {

@@ -1,6 +1,6 @@
 'use babel';
 
-import AlloyMeshVis from '../lib/alloy-mesh-vis';
+import AlloyMeshVis from '../lib/old/alloy-mesh-vis';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //

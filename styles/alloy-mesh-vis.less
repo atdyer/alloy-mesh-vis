@@ -1,8 +1,57 @@
-// The ui-variables file is provided by base themes provided by Atom.
-//
-// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
-// for a full listing of what's available.
-@import "ui-variables";
 
-.alloy-mesh-vis {
+@import "ui-variables";
+@import "syntax-variables";
+@import "octicon-utf-codes";
+@import "octicon-mixins";
+@import "item-list.less";
+
+.alloy {
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .btn-col-9 {
+
+    min-width: 75%;
+
+    button {
+      width: 100%;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  .btn-col-12 {
+    min-width: 100%;
+
+    button {
+      width: 100%;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  .btn-col-compact {
+    button {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .message-lg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.5em;
+    text-align: center;
+
+    padding: 1.5em;
+  }
+
 }
