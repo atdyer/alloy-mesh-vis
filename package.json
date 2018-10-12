@@ -1,6 +1,6 @@
 {
   "name": "alloy-mesh-vis",
-  "main": "./lib/index",
+  "main": "./lib/new/index",
   "version": "0.0.1",
   "description": "A short description of your package",
   "keywords": [],

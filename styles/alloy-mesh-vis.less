@@ -7,6 +7,9 @@
 
 .alloy {
 
+  display: flex;
+  flex-direction: column;
+
   p {
     margin-bottom: 0;
   }
@@ -52,6 +55,38 @@
     text-align: center;
 
     padding: 1.5em;
+  }
+
+  .cli {
+
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+
+    font-family: monospace;
+    min-height: 150px;
+    max-height: 150px;
+    padding: 1em;
+
+    .message {
+
+      display: flex;
+      flex: 0 0 auto;
+
+      .prefix {
+        padding-right: 0.5em;
+        font-weight: bold;
+      }
+
+      .info {
+        color: @text-color-info;
+      }
+
+      .error {
+        color: @text-color-error;
+      }
+
+    }
   }
 
 }
