@@ -64,8 +64,8 @@
     overflow-y: auto;
 
     font-family: monospace;
-    min-height: 150px;
-    max-height: 150px;
+    min-height: 200px;
+    max-height: 200px;
     padding: 1em;
 
     .message {
@@ -87,6 +87,38 @@
       }
 
     }
+  }
+
+  .commands {
+
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+
+    font-family: monospace;
+    min-height: 200px;
+    max-height: 200px;
+
+    .command {
+
+      cursor: pointer;
+      display: flex;
+      flex: 0 0 auto;
+      padding: 0.5em;
+
+      background-color: @button-background-color;
+      border-bottom: 1px solid @pane-item-border-color;
+
+    }
+
+    .command:first-of-type {
+      border-top: 1px solid @pane-item-border-color;
+    }
+
+    .command:hover {
+      background-color: @button-background-color-hover;
+    }
+
   }
 
 }
