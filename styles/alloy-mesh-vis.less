@@ -64,8 +64,6 @@
     overflow-y: auto;
 
     font-family: monospace;
-    min-height: 200px;
-    max-height: 200px;
     padding: 0.5em;
 
     .message {
@@ -96,17 +94,13 @@
     overflow-y: auto;
 
     font-family: monospace;
-    min-height: 200px;
-    max-height: 200px;
 
     .command {
 
-      cursor: pointer;
       display: flex;
       flex: 0 0 auto;
       padding: 0.5em;
 
-      background-color: @button-background-color;
       border-bottom: 1px solid @pane-item-border-color;
 
     }
@@ -115,10 +109,47 @@
       border-top: 1px solid @pane-item-border-color;
     }
 
-    .command:hover {
+    .active {
+
+      cursor: pointer;
+      background-color: @button-background-color;
+
+    }
+
+    .active:hover {
       background-color: @button-background-color-hover;
     }
 
+  }
+
+  .display {
+
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+
+  }
+
+  .panel-item {
+
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+
+  }
+
+  .panel-item-cli {
+    min-height: 250px;
+    max-height: 250px;
+  }
+
+  .panel-item-commands {
+    min-height: 250px;
+    max-height: 250px;
+  }
+
+  .panel-item-display {
+    flex: 1 0 auto;
   }
 
 }
