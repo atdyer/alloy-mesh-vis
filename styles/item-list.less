@@ -47,15 +47,18 @@
     padding-left: @ui-size;
     padding-right: @ui-size;
     background-color: @level-2-color;
-    cursor: pointer;
+
+    &.active {
+      cursor: pointer;
+
+      &:hover {
+        color: @text-color-info;
+      }
+    }
 
     &::before {
       margin-right: 0;
       text-align: center;
-    }
-
-    &:hover {
-      color: @text-color-info;
     }
   }
 
