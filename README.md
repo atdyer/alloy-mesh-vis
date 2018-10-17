@@ -1,36 +1,29 @@
-# alloy-mesh-vis package
+# alloy-mesh-vis
+
+An Atom Editor plugin that greatly simplifies the visualization of meshes created
+using the [mesh.als](http://www4.ncsu.edu/~jwb/alloy/) model of an ADCIRC finite
+element mesh.
 
 # Dependencies
 
-In order to call Java code from the Atom editor, this package uses the
-[node-java](https://www.npmjs.com/package/java) package. The node-java
-package itself has two prerequisites in order for it to be installed correctly.
+In order to interact with Alloy behind the scenes, the plugin requires a special
+version of Alloy, available 
+[here](https://github.com/atdyer/org.alloytools.alloy/raw/master/org.alloytools.alloy.dist.jar).
+This version is identical to Alloy version 5, but includes a special command-line
+interface that enables simple communication with the plugin.
 
-  * A JDK must be installed
-  * Python 2 must be the version used when the ```python``` command is called
-
-## Ubuntu
-
-My Ubuntu 18.04 installation had no JDK installed and numerous Python versions
-installed. To install the JDK, simply use the command:
+Additionally, you'll need Java installed, just as you would when using Alloy
+as a standalone program. If you can run Alloy using the command
 
 ```bash
-$ sudo apt-get install default-jdk
+java -jar org.alloytools.alloy.dist.jar
 ```
 
-I have Anaconda Python installed, which has edited my ```.bashrc``` file to
-include Anaconda Python in the system path. Simply comment out the line added
-by the Anaconda installation, which may be similar to this:
+then you should be good to go.
 
-```bash
-export PATH="/home/tristan/Downloads/python/bin:$PATH"
-```
+# History
 
-by adding a ```#``` symbol at the beginning of the line. Verify that Python 2
-is the version now being used by opening a new terminal and typing the
-command ```python -V```. After the package has been installed you may change
-the Python version as you please.
-
-If Python 3 is still being used you may need to use another method, such as
-[update-alternatives](http://web.mit.edu/6.00/www/handouts/pybuntu.html), to
-change the version of Python being used.
+A previous version of this plugin used the [node-java](https://www.npmjs.com/package/java)
+package to communicate with Alloy, but it proved to be extremely buggy and often left you
+wading through dependency hell. This lead to the development of a simple command-line
+interface, which is accessed using [Node Child Processes](https://nodejs.org/api/child_process.html).

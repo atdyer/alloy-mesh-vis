@@ -1,12 +1,9 @@
 {
   "name": "alloy-mesh-vis",
-  "main": "./lib/new/index",
-  "version": "0.0.1",
-  "description": "A short description of your package",
+  "main": "./lib/index",
+  "version": "0.0.0",
+  "description": "Edit and run Alloy models, and view simple ADCIRC meshes.",
   "keywords": [],
-  "activationCommands": {
-    "atom-workspace": "alloy-mesh-vis:toggle"
-  },
   "activationHooks": [
     "alloy-mesh-vis:grammar-used"
   ],
