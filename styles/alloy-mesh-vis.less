@@ -3,7 +3,6 @@
 @import "syntax-variables";
 @import "octicon-utf-codes";
 @import "octicon-mixins";
-@import "item-list.less";
 
 .alloy {
 
@@ -128,6 +127,41 @@
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
+
+  }
+
+  .header {
+
+    display: flex;
+    align-items: center;
+    background-color: @base-background-color;
+    padding: 1em;
+
+    .title {
+      flex: 1 0 auto;
+      display: flex;
+      align-items: center;
+      font-size: 1.5em;
+      vertical-align: middle;
+    }
+
+    .icon-button {
+      position: absolute;
+      right: 0;
+      padding-left: 1em;
+      padding-right: 1em;
+      background-color: @base-background-color;
+
+      &.active {
+        cursor: pointer;
+
+        &:hover {
+          color: @text-color-info;
+        }
+
+      }
+
+    }
 
   }
 
