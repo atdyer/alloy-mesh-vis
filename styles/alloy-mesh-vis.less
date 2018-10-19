@@ -194,7 +194,7 @@
   svg {
     .links {
       path {
-        stroke: lightsteelblue;
+        stroke: steelblue;
       }
     }
 
@@ -207,6 +207,21 @@
     .labels {
       text-anchor: middle;
       dominant-baseline: middle;
+
+      cursor: default;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
+      &.node {
+        fill: black;
+      }
+
+      &.element {
+        fill: white;
+      }
+
     }
   }
 
